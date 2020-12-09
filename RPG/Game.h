@@ -11,8 +11,8 @@ public:
 	std::vector<Level*> levels;
 
 	void SetGameName(std::string gameName);
-	std::string GetGameName(Game game);
-	void AddLevel(Level* level, std::string levelName);
+	std::string GetGameName();
+	void AddLevel(Level* level);
 	Level* GetLevel();
 	void DeleteLevel(Level* level);
 

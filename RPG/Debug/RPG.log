@@ -1,3 +1,2 @@
-﻿  Core.cpp
-D:\C++\RPG\RPG\Core.cpp(19,18): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+﻿  program.cpp
   RPG.vcxproj -> D:\C++\RPG\Debug\RPG.exe
