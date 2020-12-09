@@ -2,7 +2,7 @@
 
 Game::Game(std::string name)
 {
-	superLevel = new Level("SuperLevel");
+	
 	this->gameName = name;
 }
 
@@ -22,15 +22,15 @@ std::string Game::GetGameName(Game game)
 
 void Game::AddLevel(Level* level, std::string levelName)
 {
-	level = new Level(levelName);
+	levels.push_back(level);
 }
 
-Level Game::GetLevel(Level level)
+Level* Game::GetLevel()
 {
 	return level;
 }
 
 void Game::DeleteLevel(Level* level)
 {
-	level->~Level();
+	levels.erase(std::remove(levels.begin(), levels.end(), level), levels.end());
 }

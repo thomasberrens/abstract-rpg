@@ -1,6 +1,8 @@
 #pragma once
 #include <iostream>
 #include "Game.h"
+#include "Level.h"
+
 class Core
 {
 public:
@@ -8,9 +10,12 @@ public:
 
 	~Core();
 
-	int GetPlayerCount();
+	std::vector<Game*> games;
 
-	void AddGame(Game* game, std::string gameName);
+	int GetPlayerCount();
+	
+	void AddGame(Game* game);
+	void RemoveGame(Game* game);
 
 	void SetCoreName(std::string name);
 	std::string GetCoreName();
@@ -30,10 +35,9 @@ public:
 	std::string country;
 	float version;
 
-	int playercount;
-
 	bool isRunning;
 
 	Game* supergame;
+	Level level;
 
 };

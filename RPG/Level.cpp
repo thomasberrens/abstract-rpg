@@ -10,20 +10,27 @@ Level::~Level()
   
 }
 
-Player Level::GetPlayer(Player player)
+int Level::playersize()
+{
+    return players.size();
+}
+
+Player* Level::GetPlayer()
 {
     return player;
 }
 
-void Level::AddPlayer(Player* player, std::string playerName)
+void Level::AddPlayer(Player* aPlayer)
 {
-    player = new Player(playerName);
+    players.push_back(aPlayer);
     
 }
 
-void Level::DeletePlayer(Player* player)
+void Level::DeletePlayer(Player* aPlayer)
 {
-    player->~Player();
+   
+    players.erase(std::remove(players.begin(), players.end(), aPlayer), players.end());
+    
 }
 
 std::string Level::GetLevelName()

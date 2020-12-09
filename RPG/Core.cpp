@@ -1,5 +1,4 @@
 #include "Core.h"
-#include <iostream>
 
 
 std::string Core::GetGameName(Game* game) {
@@ -28,12 +27,18 @@ Core::~Core()
 
 int Core::GetPlayerCount()
 {
-	return playercount;
+		
+	return level.players.size() + 1; // +1 omdat die begint met tellen bij 0
 }
 
-void Core::AddGame(Game* game, std::string gameName)
+void Core::AddGame(Game* game)
 {
-	  game = new Game(gameName);
+	games.push_back(game);
+}
+
+void Core::RemoveGame(Game* game)
+{
+	games.erase(std::remove(games.begin(), games.end(), game), games.end());
 }
 
 void Core::SetCoreName(std::string name)
