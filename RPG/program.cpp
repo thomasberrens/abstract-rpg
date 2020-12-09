@@ -87,21 +87,14 @@ void proofLevel() {
 
 	std::cout << std::endl;
 
-
 }
 
 int main() {
-	
 
 	proofCore();
 	proofPlayer();
 	proofGame();
 	proofLevel();
-	/*while (core.isRunning)
-	{
-	//	std::cout << "Core up and running!" << std::endl;
-
-	} */
 }
 	
 
