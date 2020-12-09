@@ -11,14 +11,14 @@ void Core::SetActive(bool active)
 	if (!active) isRunning = false;
 }
 
-Core::Core(int uid, std::string _country, std::string coreName, int version)
-{
+Core::Core(int uid, std::string country, std::string coreName, int version) {
 	supergame = new Game("Main game");
-	this->country = _country;
+	this->country = country;
 	this->uid = uid;
 	this->coreName = coreName;
 	this->version = version;
 
+	level = new Level("MainLevel");
 }
 
 Core::~Core()
@@ -27,8 +27,8 @@ Core::~Core()
 
 int Core::GetPlayerCount()
 {
-		
-	return level.players.size() + 1; // +1 omdat die begint met tellen bij 0
+	
+	return level->players.size() + 1; // +1 omdat die begint met tellen bij 0
 }
 
 void Core::AddGame(Game* game)

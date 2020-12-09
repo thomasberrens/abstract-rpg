@@ -1,7 +1,6 @@
 #pragma once
 #include <iostream>
 #include "Game.h"
-#include "Level.h"
 
 class Core
 {
@@ -38,6 +37,6 @@ public:
 	bool isRunning;
 
 	Game* supergame;
-	Level level;
+	Level* level;
 
 };

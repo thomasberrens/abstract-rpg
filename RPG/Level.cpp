@@ -2,17 +2,13 @@
 
 Level::Level(std::string name)
 {
-    player = new Player("SuperPlayer");
+    
+    this->levelName = name;
 }
 
 Level::~Level()
 {
   
-}
-
-int Level::playersize()
-{
-    return players.size();
 }
 
 Player* Level::GetPlayer()

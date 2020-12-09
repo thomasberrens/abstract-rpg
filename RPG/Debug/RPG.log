@@ -1,2 +1,7 @@
-﻿  program.cpp
+﻿  Core.cpp
+D:\C++\RPG\RPG\Core.cpp(19,18): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\C++\RPG\RPG\Core.cpp(22,24): warning C4552: '+': result of expression not used
+  Level.cpp
+  program.cpp
+  Generating Code...
   RPG.vcxproj -> D:\C++\RPG\Debug\RPG.exe
