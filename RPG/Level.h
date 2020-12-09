@@ -2,6 +2,8 @@
 #include <iostream>
 #include "Player.h"
 #include <vector>
+#include <algorithm>
+
 class Level
 {
 public:

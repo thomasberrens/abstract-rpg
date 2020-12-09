@@ -18,6 +18,18 @@ int main() {
 	std::cout << core.GetCountryName() << std::endl;
 	std::cout << core.GetUID() << std::endl;
 
+	Player* player;
+
+	player = new Player("PlayerHF");
+
+	core.level->AddPlayer(player);
+
+	std::cout << core.GetPlayerCount() << std::endl;
+
+	core.level->DeletePlayer(player);
+
+	std::cout << core.GetPlayerCount() << std::endl;
+
 	while (core.isRunning)
 	{
 	//	std::cout << "Core up and running!" << std::endl;

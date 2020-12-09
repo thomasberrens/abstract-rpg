@@ -27,8 +27,7 @@ Core::~Core()
 
 int Core::GetPlayerCount()
 {
-	
-	return level->players.size() + 1; // +1 omdat die begint met tellen bij 0
+	return level->players.size(); // +1 omdat die begint met tellen bij 0
 }
 
 void Core::AddGame(Game* game)

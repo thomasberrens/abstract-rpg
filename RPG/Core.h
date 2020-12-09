@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 #include "Game.h"
-
+#include <algorithm>
 class Core
 {
 public:

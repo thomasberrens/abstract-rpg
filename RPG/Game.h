@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include "Level.h"
+#include <algorithm>
 class Game
 {
 public:
