@@ -23,12 +23,16 @@ public:
 	
 	std::string GetGameName(Game* game);
 
+	void SetActive(bool active);
+
 	std::string coreName;
 	int uid;
 	std::string country;
 	float version;
 
 	int playercount;
+
+	bool isRunning;
 
 	Game* supergame;
 
